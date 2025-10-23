@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Agency</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 0;
+            background-color:#0e011b;
+            color: #ffffff;
+            margin: 20px;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #16033e;
+            border: 5px transparent;
+            border-radius: 15px;
+        }
+        .txt {
+            text-align: left ;
+        }
+        .text-content {
+            max-width: 500px;
+        }
+        .text-content h1 {
+            font-size: 2em;
+        }
+        .text-content p {
+            margin: 10px 0;
+        }
+        .image-content img {
+            max-width: 400px;
+            height: auto;
+        }
+        .txt {
+            display: inline-block;
+            padding: 10px;
+            margin: 5px;
+            width: 20%;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .image-content {
+                order: 1;
+            }
+            .text-content {
+                order: 2;
+                text-align: center;
+            }
+            #x{
+                padding-inline: 90px;
+                align-self: center;
+            }
+            #y {
+                padding-inline: 90px;
+                align-self: center;
+            }
+            #z {
+                padding-inline: 90px;
+                align-self: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="text-content">
+            <h1>Get <span style="color:#9b51e0;">insights</span> that help your business grow.</h1>
+            <p id="txt">Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
+            <p class="section" id="section">
+            <div class="txt" id="x" style="margin: 15px;">
+                <strong>10k+</strong>
+                <div style="font-size: 8px;"> COMPANIES</div>
+            </div>
+            <div class="txt" id="y" style="margin: 15px;">
+                <strong>314</strong>
+                <div style="font-size: 8px;"> TEMPLATES</div>
+            </div>
+            <div class="txt" id="z" style="margin: 15px;" >
+                <strong>12M+</strong>
+                <div style="font-size: 8px;">QUERIES</div>
+            </div>
+            </p>
+        </div>
+        <div class="image-content">
+            <img src="https://drive.google.com/uc?id=1w4ElzkUEvUFiJe7ktcphe5fTr9y1TLoU" alt="Business insights">
+        </div>
+    </div>
+
+</body>
+</html>
