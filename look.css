@@ -1,0 +1,27 @@
+body {
+    background-color: rgb(174, 217, 235);
+    color: black;
+    font-weight: 10;
+    border: 1;
+    border-color: black;
+    
+}
+
+.did {
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+button{
+    padding: 10px;
+    border: white; 
+    border-radius: 50px;  
+    background-color: white;
+    color: rgb(32, 105, 134);
+    
+   }

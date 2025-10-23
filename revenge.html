@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey</title>
+    <script>
+        function checkAnswer() {
+            var selectedOption = document.querySelector('input[name="option"]:checked');
+            
+            if (selectedOption) {
+                var resultMessage = (selectedOption.value === 'Yes') ? 'I knew it!' : 'Incorrect answer.';
+                alert(resultMessage);
+            } else {
+                alert('Please select an option.');
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <h1>Quiz</h1>
+    <p>Do you agree with the statement:</p>
+    <p><strong>John is gay:</strong></p>
+
+    <form onsubmit="event.preventDefault(); checkAnswer();">
+        <label for="yes">Yes</label>
+        <input type="radio" id="yes" name="option" value="indeed">
+
+        <label for="no">No</label>
+        <input type="radio" id="no" name="option" value="no">
+
+        <br>
+
+        <button><input class="lol" type="submit" value="Submit"></button>
+    </form>
+
+</body>
+</html>

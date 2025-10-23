@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+button{
+    padding: 10px;
+    border: white; 
+    border-radius: 50px;  
+    background-color:  rgb(209, 103, 11);
+    color: white;
+    
+   }
+ *{
+    background-color: rgb(18, 17, 17);
+    color: rgb(209, 103, 11);
+} 
+h1{
+    font-weight: bolder;
+    font-style: impact;
+    text-align: center;
+    font-size: 70px;
+}
+a{
+    background-color: rgb(255, 119, 0);
+    color: black; 
+    
+}
+
+.daniel{
+    color: red;
+    font-size: 32px;
+}
+.lol{
+    color: black;
+background-color: rgb(209, 103, 11);
+}

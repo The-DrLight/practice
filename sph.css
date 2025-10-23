@@ -1,0 +1,95 @@
+body {
+  background: radial-gradient(ellipse farthest-side at 80px 180px, rgb(45, 111, 45), rgb(25, 25, 25));
+  height: 100vh;
+  font-family: sans-serif, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+}
+.header {
+  position: relative;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  max-width: 1247px;
+  height: 10px;
+  top: 10px;
+  margin-left: 3%;
+  margin-right: 3%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-radius: 35px;
+  justify-content: center;
+}
+a {
+  color: white;
+
+}
+.logo {
+  position: absolute;
+  top: 15%;
+  left: 20px;
+  height: 35px;
+  width: 90px;
+}
+#navButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 10px;
+  top: 15%;
+  height: 70%;
+  border-radius: 20px;
+  border-style: none;
+  width: 100px;
+  color: rgb(0, 56, 0);
+  font-family: sans-serif;
+  font-size: 12px;
+  color: white;
+  background-color: rgb(0, 56, 0);
+}
+.text {
+  position: absolute;
+  text-align: center;
+  top: 90px;
+}
+.navlist {
+  text-decoration: none;
+  padding: 5px;
+}
+.navlist:hover {
+  color: rgb(243, 199, 32);
+}
+.search {
+  position: absolute;
+  height: 20px;
+  right: 110px;
+}
+#bigtxt {
+  font-size: 40px;
+  color: white;
+  white-space: wrap;
+  font-weight: 600;
+  text-align: center;
+  font-family: figtree;
+  justify-content: center;
+}
+.text {
+  text-align: center;
+  position: relative;
+  top: 60px;
+}
+.clrtxt {
+  color: rgb(243, 199, 32);
+}
+#smalltxt {
+  color: white;
+  font-size: 15px;
+}
+#service {
+  padding: 8px 17px 8px 17px;
+  border-width: 0;
+  color: white;
+  background-color: rgb(10, 129, 10);
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 300;
+}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+        <title>sololearn test run</title>
+    
+          <meta name="author"
+          content="Light">
+    </head>
+    <body>
+        
+        <h1 id="testing">The Best Restaurant</h1>
+          <p>Best food in the city</p>
+        <h2 id="menu">Food Menu</h2>
+        <h3>Starters</h3>
+          <p>Small bites</p>
+          <button>Order now</button>
+          <button>delete</button>
+<head>
+  <title>MEMES 🤣😂</title>
+  <style>
+  *{
+    margin:0%;
+  }
+  h1{margin-left: 5em;}
+  h2{margin-left: 3em;}
+   img {
+     width: 270px;;
+     height: 480px;
+     overflow:hidden;
+   }
+   button {
+     padding:10px;
+     border:#0c0d0e;
+     border-radius:10px;
+     margin:5px;
+     box-shadow: 1px 3px 6px #44484B;
+     font-weight: bolder;
+     font-style: monospace;
+     font-size:20px;
+   }
+   #prevButton{
+     background-color:#cc1c1c5d; 
+   }
+   #nextButton{
+     background-color:#00a6ff6d; 
+   }
+   button:hover {
+     border:2px solid rgb(100, 100, 76);
+   }
+  </style>
+</head>
+
+  
+  
+  
+  
+  <div id="content">
+    
+    <img src="https://i.imgur.com/QjXEUSn.png" alt="meme1">
+    <img src="https://i.imgur.com/yaCJBIt.png" alt="meme2">
+    
+    <img src="https://i.imgur.com/D4QwTmt.png" alt="meme3">
+    
+    <img src="https://i.imgur.com/0j2b7cs.png" alt="meme4">
+    
+    <img src="https://i.imgur.com/zF91Snf.png" alt="meme5">
+    
+    <img src="https://i.imgur.com/gz1AwfZ.png" alt="meme6">
+    
+    <img src="https://i.imgur.com/rdZScEw.png" alt="meme7">
+    
+    <img src="https://i.imgur.com/IDa3mU4.png" alt="meme8">
+    
+    <img src="https://i.imgur.com/jusRUIc.png" alt="meme9">
+    
+ 
+  </div>
+  <button id="prevButton"><</button>
+  <button id="nextButton">></button>
+  
+  
+  
+  
+  
+  
+  
+  
+  <script>
+    let currentIndex = 0;
+    const textArray = document.querySelectorAll("#content img");
+    function showCurrentText() {
+      textArray.forEach((text, index) => {
+        if (index === currentIndex) {
+          text.style.display = "block";
+        } else {
+          text.style.display = "none";
+        }
+      });
+    }
+    showCurrentText();
+    document.getElementById("prevButton").addEventListener("click", function () {
+      if (currentIndex > 0) {
+        currentIndex--;
+        showCurrentText();
+      }
+    });
+    document.getElementById("nextButton").addEventListener("click", function () {
+      if (currentIndex < textArray.length - 1) {
+        currentIndex++;
+        showCurrentText();
+      }
+    });
+    
+    alert("This page belongs to Light 😎 , OK ??")
+  </script>
+
+<!--Menu section-->
+<h2> Menu </h2>
+<!--Menu options-->
+<p>Sushi</p>
+<p>Lasagna</p>
+<p>Paella</p>
+
+<P>Click to generate</P>
+<button>Generate</BUTTON>
+
+  <h1>To-do list</h1>
+<p>Book train tickets</p>
+<p>Pack for the trip</p>
+<button>Add task</button>
+<button>Delete task</button>
+
+<p><b>Bold</b> text</p>
+<p><i>Italic</i> text</p>
+<p><u>Underlined</u> text</p>
+<hr>
+<p><strong>This is Light's code</strong></p>
+<hr>
+<p>I'd like to be notified
+  by <strong>email</strong></p>
+  
+  <p>I'd like to be notified 
+  by <b>email</b></p>
+
+  <p>His favorite book 
+    is the <em>Odyssey</em></p>
+    
+    <p>His favorite book 
+    is the <i>Odyssey</i></p>
+
+    <a href=
+"https://www.sololearn.com" target="_blank">
+Sololearn</a>
+
+<p>Have a look at <a href=
+  'https://www.wikipedia.org'>
+  Wikipedia</a></p>
+
+  <ol>
+    <li>Fruits</li>
+      <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+      </ul>
+    <li>Milk</li>
+    <li>Cheese</li>
+  </ol>
+  <img src="Pictures/Happiness and freedom.png" width="40" height="60">
+ <p>Have a look at my other codes <nav>
+  <a href="theway.html" target="_blank">church work</a><br>
+<a href="iCode.html" target="_blank">flex</a><br>
+<a href="dan.html" target="_blank">personal</a>
+</nav></p>
+
+<nav>
+  <a href="#testing">top of page</a><br>
+  <a href="#menu">menu</a>
+</nav>
+<p>Choose your interests:</p>
+<form>
+  <input type="checkbox" id="c1">
+  <label for="c1">Art</label><br>
+  <input type="checkbox" id="c2">
+  <label for="c2">Sports</label><br>
+  <input type="checkbox" id="c3">
+  <label for="c3">Tech</label>
+</form>
+<form>
+  <label for="email">Enter email</label><br>
+  <input id="email" type="text" name="email"> <br>
+  <label for="city">Enter state of origin</label>
+  <br><input id="city" type="text" name="city"><br>
+  <input type="submit">
+</form>
+<form>
+  <input type="radio" id="r1" 
+  name="pay" value="cash">
+  <label for="r1">Cash</label>
+  <input type="radio" id="r2" 
+  name="pay" value="card">
+  <label for="r2">Card</label>
+</form>
+    </body>
+</html>

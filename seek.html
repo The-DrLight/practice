@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Data Parser</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<div id="data-container">
+  <!-- Data will be loaded here -->
+</div>
+
+<script>
+$(document).ready(function() {
+  // The URL of the website from which you want to parse data
+  var url = 'http://studentid.unilag.edu.ng/sample.php';
+
+
+  $.ajax({
+    url: 'http://studentid.unilag.edu.ng/sample.php',
+    method: 'GET',
+    success: function(response) {
+      // Assuming the response is HTML content
+      // Parse the HTML string
+      var parsedHTML = $.parseHTML(response);
+
+      // Extract data from the parsed HTML
+      var data = $(parsedHTML).find('.form-control').text();
+
+      // Display the extracted data in the 'data-container' div
+      $('div').text(data);
+    },
+  });
+});
+</script>
+
+</body>
+</html>
